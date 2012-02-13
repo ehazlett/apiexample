@@ -19,7 +19,7 @@ def before():
     addr = request.remote_addr
     count = rds.incr('visitors:{0}'.format(addr))
     if count == 1:
-        rds.expire('visitors:{0}'.format(addr), 10)
+        rds.expire('visitors:{0}'.format(addr), 20)
     rds.incr('visits')
 
 def bson_to_json(data):
