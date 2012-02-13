@@ -41,7 +41,7 @@ Throttling
 ----------
 To test throttling, simply perform a series of requests against the throttled url.  By default, the `/` url is limited to 50 req/20 sec and the `/visitors` url is limited to 10 req/20 sec.
 
-    curl localhost:5000/visitors    (x15)
+    curl localhost:5000/visitors    (x15 in under 20 seconds)
 
 You will get a response (in JSON) like:
 
