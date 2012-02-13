@@ -10,7 +10,7 @@ def throttle(rds=None, limit=50):
                     'status': 'fail',
                     'response': 'Over limit ; try again later',
                 }
-                return Response(json.dumps(data, indent=2), 403)
+                return Response(json.dumps(data, indent=2), 420)
             return f(*args, **kwargs)
         return wraps(f)(decorated)
     return inner_throttle
