@@ -15,7 +15,7 @@ Usage
 
 Insert data to MongoDB:
 
-    `curl -v -d "test=123&moretesting=456" localhost:5000/`
+    curl -v -d "test=123&moretesting=456" localhost:5000/
 
 You will get a response (in JSON) like:
 
@@ -25,7 +25,7 @@ You will get a response (in JSON) like:
 
 Retrieve data from MongoDB:
 
-    `curl localhost:5000/1329142610`
+    curl localhost:5000/1329142610
 
 You will get a response (in JSON) like:
         
