@@ -51,3 +51,12 @@ You will get a response (in JSON) like:
     }
 
 
+Tests
+-----
+There are some basic default tests in `tests.py`.  One performs a simple request on the `/` url, checking for HTTP status code.  The other performs a request on `/visitors` checking content.
+
+To run the tests:
+
+    python tests.py -v
+
+
